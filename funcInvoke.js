@@ -24,3 +24,12 @@ log(getContextStrictModeFunc()); // возвращает объект undefined
 
 
 /////////////////// Вызов функции как метода ///////////////////////////////
+
+// создаем объект ninja
+var ninja = {getNinja:getContextFunc,version:"1.1.1",getVersion(){return this.version}};
+log(ninja.getNinja()); // возвращает объект ninja
+log(ninja.getVersion()); // возвращает свойство version из объекта ninja
+
+////////////////// 
+
+
